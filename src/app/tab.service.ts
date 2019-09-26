@@ -5,9 +5,11 @@ import { Observable, Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class TabService {
 
   private subject = new Subject<any>();
+  lazyModule:string;
   constructor() { }
 
   createTab(tab:any) {
@@ -18,5 +20,14 @@ export class TabService {
     console.log(this.subject)
     return this.subject.asObservable();
   }
+
+  setActiveModuleName(module:string):void{
+    this.lazyModule = module;
+  }
+
+  getActiveModuleName():string{
+    return this.lazyModule;
+  }
+
 
 }

@@ -12,6 +12,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  entryComponents:[ModuleBComponent]
 })
-export class ModBModule{ }
+export class ModBModule{
+  static entry =ModuleBComponent;
+ }

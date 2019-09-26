@@ -4,6 +4,14 @@ export const lazyWidgets: { path: string, loadChildren: () => Promise<NgModuleFa
   {
     path: 'lazy-comp',
     loadChildren: () => import('../modules/upload/upload.module').then(m => m.UploadModule)
+  },
+  {
+    path: 'moduleb',
+    loadChildren: () => import('../modules/moduleB/moduleB.module').then(m => m.ModBModule)
+  },
+  {
+    path: 'tree',
+    loadChildren: () => import('../modules/tree/tree.module').then(m => m.TreeModule)
   }
 ]
 

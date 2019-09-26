@@ -25,12 +25,13 @@ export class AppComponent {
         if (tab) {
           this.tabs.push(tab.tab);
           
-          if(this.tabs.length>2){
+          if(this.tabs.length>3){
             this.tabsComponent.openTab(tab.tab.name, this.aboutTemplate, {}, true);
            // this.router.navigate(['modb']);
           }else{
             //this.router.navigate(['upload']);
-          this.tabsComponent.openTab(tab.tab.name, this.moduleLoader, {}, true);
+            this.tabService.setActiveModuleName(tab.tab.module);
+            this.tabsComponent.openTab(tab.tab.name, this.moduleLoader, {}, true);
           // this.tabsComponent.lazyLoad(tab.tab.name, this.container, {}, true);
           // this.loader.load('lazy-comp', this.container);
           }

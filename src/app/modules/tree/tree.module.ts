@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes,RouterModule } from '@angular/router';
-import { UploadComponent } from "../upload/upload.component";
+import { TreeComponent } from "../tree/tree.component";
 
 const routes: Routes = [
-  { path: '', component: UploadComponent}
+  { path: '', component: TreeComponent}
 ];
 
 @NgModule({
-  declarations: [UploadComponent],
+  declarations: [TreeComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  entryComponents:[TreeComponent]
 })
-export class TreeModule { }
+export class TreeModule { 
+  static entry = TreeComponent;
+}

@@ -70,6 +70,7 @@ export class TabsComponent implements AfterContentInit {
   } */
 
   openTab(title: string, template, data, isCloseable = false) {
+    
     // get a component factory for our TabComponent
     const componentFactory = this._componentFactoryResolver.resolveComponentFactory(
       TabComponent
