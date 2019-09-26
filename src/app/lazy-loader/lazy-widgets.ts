@@ -7,7 +7,7 @@ export const lazyWidgets: { path: string, loadChildren: () => Promise<NgModuleFa
   },
   {
     path: 'moduleb',
-    loadChildren: () => import('../modules/moduleB/moduleB.module').then(m => m.ModBModule)
+    loadChildren: () => import('../modules/moduleB/moduleb.module').then(m => m.ModBModule)
   },
   {
     path: 'tree',

@@ -27,7 +27,6 @@ import { ModuleLoaderComponent } from './module-loader/module-loader.component';
     DynamicTabsDirective,
     FooterComponent,
     ModuleLoaderComponent
-    /* DynamicContainerComponent */
   ],
   imports: [
     BrowserModule,
