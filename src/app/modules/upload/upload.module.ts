@@ -12,6 +12,10 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
-  ]
+  ],
+  entryComponents: [UploadComponent]
 })
-export class UploadModule { }
+export class UploadModule { 
+  static entry = UploadComponent;
+}
+ 

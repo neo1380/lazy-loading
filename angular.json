@@ -31,10 +31,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": [],
-            "lazyModules": [
-              "./src/app/modules/tree/tree.module"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

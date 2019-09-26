@@ -1,4 +1,4 @@
-import { 
+/* import { 
     Component,
     ViewChild,
     OnInit,
@@ -6,8 +6,7 @@ import {
     Input, 
     ViewContainerRef,
     NgModuleFactory,
-    ComponentRef,
-    NgModuleFactoryLoader
+    ComponentRef
   } from '@angular/core';
   
   import { LazyLoadConfig } from './lazy-load.module';
@@ -17,30 +16,19 @@ import {
     template: `
       <ng-template #dyncontainer></ng-template>      
     `,
-    styles: []
+    styles: [],
+    providers:[]
   })
   export class DynamicContainerComponent implements OnInit,OnDestroy {
     @ViewChild('dyncontainer', {static: true, read: ViewContainerRef }) vcRef: ViewContainerRef;
     loaded: boolean;
   
-    constructor(private moduleLoader: NgModuleFactoryLoader) { }
+    constructor(private moduleLoader: NgModuleFactory) { }
   
     compRef: ComponentRef<any>;
   
     @Input() modulePath: string;
     @Input() moduleName: string;
-  
-    _inited: boolean
-    set inited(val: boolean) {
-      if(val) {
-        this.loadComponent();
-      }
-      this._inited = val;
-    };
-  
-    get inited() {
-      return this._inited;
-    }
 
     ngOnInit() {
         console.log('dynamic init')
@@ -61,4 +49,4 @@ import {
     ngOnDestroy() {
       this.compRef.destroy();
     }
-  }
+  } */

@@ -15,6 +15,7 @@ import {
 
 import { TabComponent } from './tab.component';
 import { DynamicTabsDirective } from './dynamic-tabs.directive';
+import {LazyLoaderService} from '../lazy-loader/lazy-loader.service';
 
 @Component({
   selector: 'my-tabs',
@@ -51,7 +52,7 @@ export class TabsComponent implements AfterContentInit {
   */
   // @ViewChild('container', {read: ViewContainerRef}) dynamicTabPlaceholder;
 
-  constructor(private _componentFactoryResolver: ComponentFactoryResolver) {}
+  constructor(private _componentFactoryResolver: ComponentFactoryResolver,private loader: LazyLoaderService) {}
 
   // contentChildren are set
   ngAfterContentInit() {
@@ -63,6 +64,10 @@ export class TabsComponent implements AfterContentInit {
       this.selectTab(this.tabs.first);
     }
   }
+
+/*   lazyLoad(title: string, container, data, isCloseable = false) {
+    this.loader.load('lazy-comp', container);
+  } */
 
   openTab(title: string, template, data, isCloseable = false) {
     // get a component factory for our TabComponent

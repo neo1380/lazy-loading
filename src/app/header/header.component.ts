@@ -9,11 +9,11 @@ import { TabService } from '../tab.service';
 export class HeaderComponent implements OnInit {
   count:number=0;
   tabs=[
-    {'name':'CRMR','packageid':"pkg123456789"},
-    {'name':'ARGR','packageid':"pkg123456789"},
-    {'name':'XRI','packageid':"pkg123456789"},
-    {'name':'Risk','packageid':"pkg123456789"},
-    {'name':'Return report','packageid':"pkg123456789"}
+    {'name':'tab1','packageid':"pkg123456789"},
+    {'name':'tab2','packageid':"pkg123456789"},
+    {'name':'tab3','packageid':"pkg123456789"},
+    {'name':'tab4','packageid':"pkg123456789"},
+    {'name':'tab5','packageid':"pkg123456789"}
   ];
 
   constructor(private tabService:TabService) { }

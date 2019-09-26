@@ -1,0 +1,11 @@
+https://stackoverflow.com/questions/56685588/lazy-load-module-in-angular-8/56687548#56687548
+
+https://stackblitz.com/edit/angular-ifs7sp?file=src%2Fapp%2Fapp.component.ts
+
+https://blog.angularindepth.com/as-busy-as-a-bee-lazy-loading-in-the-angular-cli-d2812141637f
+
+https://stackoverflow.com/questions/40293240/how-to-manually-lazy-load-a-module
+
+https://netbasal.com/the-need-for-speed-lazy-load-non-routable-modules-in-angular-30c8f1c33093
+https://stackoverflow.com/questions/40293240/how-to-manually-lazy-load-a-module/40293482#answer-52627071
+
